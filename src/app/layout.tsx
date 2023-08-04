@@ -11,6 +11,7 @@ const fontHeading = localFont({
 });
 
 export const metadata = {
+  title: "TILT Legal",
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
     { media: "(prefers-color-scheme: dark)", color: "black" },
