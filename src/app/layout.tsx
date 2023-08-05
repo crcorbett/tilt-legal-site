@@ -32,7 +32,11 @@ export default function RootLayout({
           fontHeading.variable
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider
+          defaultTheme="system"
+          enableSystem
+          themes={["light", "dark", "black"]}
+        >
           {children}
         </ThemeProvider>
       </body>
