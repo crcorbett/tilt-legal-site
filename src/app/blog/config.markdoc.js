@@ -8,7 +8,7 @@ export const config = {
     heading: {
       render: "Heading",
       attributes: {
-        level: { type: number },
+        level: { type: Number },
       },
     },
   },
@@ -17,7 +17,7 @@ export const config = {
       render: "Callout",
       attributes: {
         title: {
-          type: string,
+          type: String,
           default: "", // default heading for callout component
         },
       },
