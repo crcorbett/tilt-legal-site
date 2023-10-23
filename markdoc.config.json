@@ -1,0 +1,12 @@
+[
+  {
+    "id": "Blog",
+    "path": "src/app/blog/(articles)/",
+    "schema": {
+      "path": "src/app/blog/config.markdoc.js",
+      "type": "esm",
+      "property": "config",
+      "watch": true
+    }
+  }
+]
