@@ -1,7 +1,6 @@
-import { Config } from "@markdoc/markdoc";
 import { Heading, Callout, Paragraph } from "./(components)";
 
-export const config: Config = {
+export const config = {
   nodes: {
     paragraph: {
       render: "Paragraph",
@@ -9,7 +8,7 @@ export const config: Config = {
     heading: {
       render: "Heading",
       attributes: {
-        level: { type: Number },
+        level: { type: number },
       },
     },
   },
@@ -18,7 +17,7 @@ export const config: Config = {
       render: "Callout",
       attributes: {
         title: {
-          type: String,
+          type: string,
           default: "", // default heading for callout component
         },
       },
@@ -27,7 +26,7 @@ export const config: Config = {
 };
 
 export const components = {
-  Paragraph: Paragraph,
-  Heading: Heading,
-  Callout: Callout,
+  Paragraph,
+  Heading,
+  Callout,
 };
