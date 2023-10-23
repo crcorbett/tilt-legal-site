@@ -6,7 +6,7 @@ import React from "react";
 import { TableOfContents } from "../(components)";
 import matter from "gray-matter";
 import { Metadata } from "next";
-import { components, config } from "../config.markdoc";
+import { components, config } from "../config.markdoc.js";
 import { postSchema } from "@/lib/validations";
 
 const ARTICLES_PATH = "src/app/blog/(articles)";
@@ -37,7 +37,7 @@ export async function generateMetadata({
 }
 
 async function getMarkdownContent(slug: string) {
-  const filePath = path.join(POSTS_DIR, slug + ".md");
+  const filePath = path.join(POSTS_DIR, slug + ".mdoc");
   const source = fs.readFileSync(filePath, "utf-8");
   const matterResult = matter(source);
   const frontMatter = postSchema.parse(matterResult.data);
